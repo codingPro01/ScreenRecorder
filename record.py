@@ -6,6 +6,8 @@ SCREEN_SIZE = (GetSystemMetrics(0), GetSystemMetrics(1))
 fourcc = cv2.VideoWriter_fourcc(*"XVID")
 out = cv2.VideoWriter("output.avi", fourcc, 20.0, (SCREEN_SIZE))
 a = True
+Minimize = win32gui.GetForegroundWindow()
+win32gui.ShowWindow(Minimize, win32con.SW_MINIMIZE)
 while True:
     img = pyautogui.screenshot()
     frame = np.array(img)

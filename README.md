@@ -2,7 +2,7 @@
 누구나 무료로 쓸 수 있는 Screen Recorder
 
 
-모듈 설치:
+모듈 설치: 
   pip3 install numpy opencv-python pyautogui keyboard
 
 
